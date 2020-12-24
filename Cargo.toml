@@ -1,0 +1,23 @@
+[package]
+name = "rust-china-conf-2020-code-analysis-demo"
+version = "0.1.0"
+authors = ["Heymind <heymind@outlook.com>"]
+edition = "2018"
+
+[[bin]]
+name = "bottom_up"
+path = "src/bottom_up.rs"
+
+[[bin]]
+name = "top_down"
+path = "src/top_down.rs"
+
+[dependencies]
+rust-analyzer = { git = "https://github.com/rust-analyzer/rust-analyzer.git",rev = "bb697727" }
+ide = { git = "https://github.com/rust-analyzer/rust-analyzer.git",rev = "bb697727"  }
+ide_db = { git = "https://github.com/rust-analyzer/rust-analyzer.git",rev = "bb697727"  }
+vfs = { git = "https://github.com/rust-analyzer/rust-analyzer.git",rev = "bb697727"  }
+hir =  { git = "https://github.com/rust-analyzer/rust-analyzer.git",rev = "bb697727"  }
+syntax =   { git = "https://github.com/rust-analyzer/rust-analyzer.git",rev = "bb697727"  }
+anyhow =  "1.0"
+rustyline = "7.1.0"
